@@ -9,7 +9,7 @@ global with sharing class CaseManager {
         Case result =  [SELECT CaseNumber,Subject,Status,Origin,Priority
                         FROM Case
                         WHERE Id = :caseId];
-        System.debug('In to REST Webservice PK1');
+        System.debug('In to REST Webservice PK');
         return result;
     }
     @HttpPost
